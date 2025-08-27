@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		805CD8592C4FEB3200476D26 /* OSCTuesdayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805CD8582C4FEB3200476D26 /* OSCTuesdayApp.swift */; };
+		805CD85B2C4FEB3200476D26 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805CD85A2C4FEB3200476D26 /* ContentView.swift */; };
+		805CD85D2C4FEB3500476D26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 805CD85C2C4FEB3500476D26 /* Assets.xcassets */; };
+		805CD8602C4FEB3500476D26 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 805CD85F2C4FEB3500476D26 /* Preview Assets.xcassets */; };
+		805CD8682C4FEB4F00476D26 /* OSCKit in Frameworks */ = {isa = PBXBuildFile; productRef = 805CD8672C4FEB4F00476D26 /* OSCKit */; };
+		805CD86A2C4FEB4F00476D26 /* OSCKitCore in Frameworks */ = {isa = PBXBuildFile; productRef = 805CD8692C4FEB4F00476D26 /* OSCKitCore */; };
+		805CD86C2C4FEC5C00476D26 /* OSCReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805CD86B2C4FEC5C00476D26 /* OSCReceiver.swift */; };
+		805CD86E2C4FED5200476D26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805CD86D2C4FED5200476D26 /* AppDelegate.swift */; };
+		805CD8BA2C51201200476D26 /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805CD8B92C51201200476D26 /* LogView.swift */; };
+		805CD8C22C51227C00476D26 /* OSCTuesdayWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805CD8C12C51227C00476D26 /* OSCTuesdayWatchApp.swift */; };
+		805CD8C42C51227C00476D26 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805CD8C32C51227C00476D26 /* ContentView.swift */; };
+		805CD8C62C51227F00476D26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 805CD8C52C51227F00476D26 /* Assets.xcassets */; };
+		805CD8C92C51227F00476D26 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 805CD8C82C51227F00476D26 /* Preview Assets.xcassets */; };
+		805CD8CC2C51227F00476D26 /* OSCTuesdayWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 805CD8BF2C51227C00476D26 /* OSCTuesdayWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		805CD8D62C51259B00476D26 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805CD8D52C51259B00476D26 /* MessageView.swift */; };
+		805CD8D82C512A0200476D26 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805CD8D72C512A0100476D26 /* NotificationController.swift */; };
+		805CD8DA2C513D0D00476D26 /* WatchConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805CD8D92C513D0D00476D26 /* WatchConnector.swift */; };
+		805CD8DC2C513F5F00476D26 /* WatchConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805CD8DB2C513F5F00476D26 /* WatchConnector.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		805CD8CA2C51227F00476D26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 805CD84D2C4FEB3200476D26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 805CD8BE2C51227C00476D26;
+			remoteInfo = "OSCTuesdayWatch Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		805CD8842C50F42100476D26 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				805CD8CC2C51227F00476D26 /* OSCTuesdayWatch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		805CD8552C4FEB3200476D26 /* OSCTuesday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OSCTuesday.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		805CD8582C4FEB3200476D26 /* OSCTuesdayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSCTuesdayApp.swift; sourceTree = "<group>"; };
+		805CD85A2C4FEB3200476D26 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		805CD85C2C4FEB3500476D26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		805CD85F2C4FEB3500476D26 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		805CD86B2C4FEC5C00476D26 /* OSCReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSCReceiver.swift; sourceTree = "<group>"; };
+		805CD86D2C4FED5200476D26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		805CD8B92C51201200476D26 /* LogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
+		805CD8BF2C51227C00476D26 /* OSCTuesdayWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OSCTuesdayWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		805CD8C12C51227C00476D26 /* OSCTuesdayWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSCTuesdayWatchApp.swift; sourceTree = "<group>"; };
+		805CD8C32C51227C00476D26 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		805CD8C52C51227F00476D26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		805CD8C82C51227F00476D26 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		805CD8D02C5122F700476D26 /* OSCTuesday.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OSCTuesday.entitlements; sourceTree = "<group>"; };
+		805CD8D12C51233C00476D26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		805CD8D22C51237900476D26 /* OSCTuesdayWatch-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "OSCTuesdayWatch-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		805CD8D52C51259B00476D26 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		805CD8D72C512A0100476D26 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		805CD8D92C513D0D00476D26 /* WatchConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnector.swift; sourceTree = "<group>"; };
+		805CD8DB2C513F5F00476D26 /* WatchConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnector.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		805CD8522C4FEB3200476D26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				805CD86A2C4FEB4F00476D26 /* OSCKitCore in Frameworks */,
+				805CD8682C4FEB4F00476D26 /* OSCKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		805CD8BC2C51227C00476D26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		805CD84C2C4FEB3200476D26 = {
+			isa = PBXGroup;
+			children = (
+				805CD8572C4FEB3200476D26 /* OSCTuesday */,
+				805CD8C02C51227C00476D26 /* OSCTuesdayWatch Watch App */,
+				805CD8562C4FEB3200476D26 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		805CD8562C4FEB3200476D26 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				805CD8552C4FEB3200476D26 /* OSCTuesday.app */,
+				805CD8BF2C51227C00476D26 /* OSCTuesdayWatch Watch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		805CD8572C4FEB3200476D26 /* OSCTuesday */ = {
+			isa = PBXGroup;
+			children = (
+				805CD8D12C51233C00476D26 /* Info.plist */,
+				805CD8D02C5122F700476D26 /* OSCTuesday.entitlements */,
+				805CD8582C4FEB3200476D26 /* OSCTuesdayApp.swift */,
+				805CD85A2C4FEB3200476D26 /* ContentView.swift */,
+				805CD85C2C4FEB3500476D26 /* Assets.xcassets */,
+				805CD85E2C4FEB3500476D26 /* Preview Content */,
+				805CD86B2C4FEC5C00476D26 /* OSCReceiver.swift */,
+				805CD86D2C4FED5200476D26 /* AppDelegate.swift */,
+				805CD8B92C51201200476D26 /* LogView.swift */,
+				805CD8D92C513D0D00476D26 /* WatchConnector.swift */,
+			);
+			path = OSCTuesday;
+			sourceTree = "<group>";
+		};
+		805CD85E2C4FEB3500476D26 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				805CD85F2C4FEB3500476D26 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		805CD8C02C51227C00476D26 /* OSCTuesdayWatch Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				805CD8D22C51237900476D26 /* OSCTuesdayWatch-Watch-App-Info.plist */,
+				805CD8C12C51227C00476D26 /* OSCTuesdayWatchApp.swift */,
+				805CD8C32C51227C00476D26 /* ContentView.swift */,
+				805CD8C52C51227F00476D26 /* Assets.xcassets */,
+				805CD8C72C51227F00476D26 /* Preview Content */,
+				805CD8D52C51259B00476D26 /* MessageView.swift */,
+				805CD8D72C512A0100476D26 /* NotificationController.swift */,
+				805CD8DB2C513F5F00476D26 /* WatchConnector.swift */,
+			);
+			path = "OSCTuesdayWatch Watch App";
+			sourceTree = "<group>";
+		};
+		805CD8C72C51227F00476D26 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				805CD8C82C51227F00476D26 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		805CD8542C4FEB3200476D26 /* OSCTuesday */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 805CD8632C4FEB3500476D26 /* Build configuration list for PBXNativeTarget "OSCTuesday" */;
+			buildPhases = (
+				805CD8512C4FEB3200476D26 /* Sources */,
+				805CD8522C4FEB3200476D26 /* Frameworks */,
+				805CD8532C4FEB3200476D26 /* Resources */,
+				805CD8842C50F42100476D26 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				805CD8CB2C51227F00476D26 /* PBXTargetDependency */,
+			);
+			name = OSCTuesday;
+			packageProductDependencies = (
+				805CD8672C4FEB4F00476D26 /* OSCKit */,
+				805CD8692C4FEB4F00476D26 /* OSCKitCore */,
+			);
+			productName = OSCTuesday;
+			productReference = 805CD8552C4FEB3200476D26 /* OSCTuesday.app */;
+			productType = "com.apple.product-type.application";
+		};
+		805CD8BE2C51227C00476D26 /* OSCTuesdayWatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 805CD8CD2C51227F00476D26 /* Build configuration list for PBXNativeTarget "OSCTuesdayWatch Watch App" */;
+			buildPhases = (
+				805CD8BB2C51227C00476D26 /* Sources */,
+				805CD8BC2C51227C00476D26 /* Frameworks */,
+				805CD8BD2C51227C00476D26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OSCTuesdayWatch Watch App";
+			productName = "OSCTuesdayWatch Watch App";
+			productReference = 805CD8BF2C51227C00476D26 /* OSCTuesdayWatch Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		805CD84D2C4FEB3200476D26 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					805CD8542C4FEB3200476D26 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					805CD8BE2C51227C00476D26 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 805CD8502C4FEB3200476D26 /* Build configuration list for PBXProject "OSCTuesday" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 805CD84C2C4FEB3200476D26;
+			packageReferences = (
+				805CD8662C4FEB4F00476D26 /* XCRemoteSwiftPackageReference "OSCKit" */,
+			);
+			productRefGroup = 805CD8562C4FEB3200476D26 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				805CD8542C4FEB3200476D26 /* OSCTuesday */,
+				805CD8BE2C51227C00476D26 /* OSCTuesdayWatch Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		805CD8532C4FEB3200476D26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				805CD8602C4FEB3500476D26 /* Preview Assets.xcassets in Resources */,
+				805CD85D2C4FEB3500476D26 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		805CD8BD2C51227C00476D26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				805CD8C92C51227F00476D26 /* Preview Assets.xcassets in Resources */,
+				805CD8C62C51227F00476D26 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		805CD8512C4FEB3200476D26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				805CD8BA2C51201200476D26 /* LogView.swift in Sources */,
+				805CD8DA2C513D0D00476D26 /* WatchConnector.swift in Sources */,
+				805CD86E2C4FED5200476D26 /* AppDelegate.swift in Sources */,
+				805CD85B2C4FEB3200476D26 /* ContentView.swift in Sources */,
+				805CD86C2C4FEC5C00476D26 /* OSCReceiver.swift in Sources */,
+				805CD8592C4FEB3200476D26 /* OSCTuesdayApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		805CD8BB2C51227C00476D26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				805CD8D62C51259B00476D26 /* MessageView.swift in Sources */,
+				805CD8DC2C513F5F00476D26 /* WatchConnector.swift in Sources */,
+				805CD8C42C51227C00476D26 /* ContentView.swift in Sources */,
+				805CD8D82C512A0200476D26 /* NotificationController.swift in Sources */,
+				805CD8C22C51227C00476D26 /* OSCTuesdayWatchApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		805CD8CB2C51227F00476D26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 805CD8BE2C51227C00476D26 /* OSCTuesdayWatch Watch App */;
+			targetProxy = 805CD8CA2C51227F00476D26 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		805CD8612C4FEB3500476D26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		805CD8622C4FEB3500476D26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		805CD8642C4FEB3500476D26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = OSCTuesday/OSCTuesday.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OSCTuesday/Preview Content\"";
+				DEVELOPMENT_TEAM = FHRBRK58PT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OSCTuesday/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = Haptic.OSCTuesday;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Haptic.OSCTuesday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		805CD8652C4FEB3500476D26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = OSCTuesday/OSCTuesday.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OSCTuesday/Preview Content\"";
+				DEVELOPMENT_TEAM = FHRBRK58PT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OSCTuesday/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = Haptic.OSCTuesday;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Haptic.OSCTuesday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		805CD8CE2C51227F00476D26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OSCTuesdayWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = FHRBRK58PT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "OSCTuesdayWatch-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = OSCTuesday;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = Haptic.OSCTuesday;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Haptic.OSCTuesday.Watch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Debug;
+		};
+		805CD8CF2C51227F00476D26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OSCTuesdayWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = FHRBRK58PT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "OSCTuesdayWatch-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = OSCTuesday;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = Haptic.OSCTuesday;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Haptic.OSCTuesday.Watch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		805CD8502C4FEB3200476D26 /* Build configuration list for PBXProject "OSCTuesday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				805CD8612C4FEB3500476D26 /* Debug */,
+				805CD8622C4FEB3500476D26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		805CD8632C4FEB3500476D26 /* Build configuration list for PBXNativeTarget "OSCTuesday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				805CD8642C4FEB3500476D26 /* Debug */,
+				805CD8652C4FEB3500476D26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		805CD8CD2C51227F00476D26 /* Build configuration list for PBXNativeTarget "OSCTuesdayWatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				805CD8CE2C51227F00476D26 /* Debug */,
+				805CD8CF2C51227F00476D26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		805CD8662C4FEB4F00476D26 /* XCRemoteSwiftPackageReference "OSCKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/orchetect/OSCKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		805CD8672C4FEB4F00476D26 /* OSCKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 805CD8662C4FEB4F00476D26 /* XCRemoteSwiftPackageReference "OSCKit" */;
+			productName = OSCKit;
+		};
+		805CD8692C4FEB4F00476D26 /* OSCKitCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 805CD8662C4FEB4F00476D26 /* XCRemoteSwiftPackageReference "OSCKit" */;
+			productName = OSCKitCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 805CD84D2C4FEB3200476D26 /* Project object */;
+}
